@@ -1,0 +1,189 @@
+﻿datas
+atk,def:
+陷阱怪獸加入卡片記載的原攻守、等級、屬性
+
+texts
+中點：
+U+00b7(中點)·
+U+2027(音界號)‧
+U+30fb(片假名中點)・
+U+fe52(小句號)﹒
+U+ff0e(全形句號)．
+U+ff65(半形片假名中點)･
+效果敘述：使用、(3001)
+卡名的音界號：使用‧(2027)
+系列名的中點：使用.(002e)
+
+連字號：
+U+FF0D(全形hyphen-minus)－
+
+乘號：
+U+00D7(×)
+
+日文漢字：
+産 獣 衆 黒 悪 増 呑
+容易與中文混淆
+
+SQL:
+update texts set desc=replace(desc,'手卡','手牌');
+update texts set desc=replace(desc,'卡組','牌組');
+update texts set desc=replace(desc,'調整','協調');
+update texts set desc=replace(desc,'同調','同步');
+update texts set desc=replace(desc,'指示物','計數器');
+update texts set desc=replace(desc,'基本分','生命值');
+update texts set desc=replace(desc,'丟棄','捨棄');
+update texts set desc=replace(desc,'洗切','洗牌');
+update texts set desc=replace(desc,'把這個效果發動','發動此效果');
+update texts set desc=replace(desc,'把這張卡發動','發動此卡');
+update texts set desc=replace(desc,'這張卡','此卡');
+update texts set desc=replace(desc,'對方','對手');
+update texts set desc=replace(desc,'1只','1隻');
+update texts set desc=replace(desc,'2只','2隻');
+update texts set desc=replace(desc,'3只','3隻');
+update texts set desc=replace(desc,'4只','4隻');
+update texts set desc=replace(desc,'5只','5隻');
+update texts set desc=replace(desc,'①的','①');
+update texts set desc=replace(desc,'②的','②');
+update texts set desc=replace(desc,'③的','③');
+update texts set desc=replace(desc,'④的','④');
+update texts set desc=replace(desc,'⑤的','⑤');
+update texts set desc=replace(desc,'抽1張。','抽1張卡。');
+update texts set desc=replace(desc,'抽2張。','抽2張卡。');
+update texts set desc=replace(desc,'抽3張。','抽3張卡。');
+update texts set desc=replace(desc,'抽4張。','抽4張卡。');
+update texts set desc=replace(desc,'抽5張。','抽5張卡。');
+update texts set desc=replace(desc,'抽6張。','抽6張卡。');
+update texts set desc=replace(desc,'。 ','。');
+update texts set desc=replace(desc,'給與','給予');
+update texts set desc=replace(desc,'复','復');
+update texts set desc=replace(desc,'蓋放','覆蓋');
+update texts set desc=replace(desc,'裏側','裡側');
+update texts set desc=replace(desc,'魔法師族','魔法使族');
+update texts set desc=replace(desc,'念動力族','超能族');
+update texts set desc=replace(desc,'昆虫族','昆蟲族');
+update texts set desc=replace(desc,'上級召喚','升級召喚');
+update texts set desc=replace(desc,'XYZ召喚','超量召喚');
+update texts set desc=replace(desc,'XYZ素材','超量素材');
+update texts set desc=replace(desc,'XYZ怪獸','超量怪獸');
+update texts set desc=replace(desc,'使用其中任意','使用其中');
+update texts set desc=replace(desc,'這個效果在','此效果在');
+update texts set desc=replace(desc,'【モンスター効果】','【怪獸效果】');
+update texts set desc=replace(desc,'原本攻擊力','原攻擊力');
+update texts set desc=replace(desc,'原本守備力','原守備力');
+update texts set desc=replace(desc,'原本等級','原等級');
+update texts set desc=replace(desc,'原本屬性','原屬性');
+update texts set desc=replace(desc,'原本種族','原種族');
+update texts set desc=replace(desc,'原本持有者','原持有者');
+update texts set desc=replace(desc,'同盟怪獸','聯合怪獸');
+update texts set desc=replace(desc,'里側','裡側');
+update texts set desc=replace(desc,'或者','或');
+update texts set desc=replace(desc,'同1次的戰鬥階段','1次戰鬥階段');
+update texts set desc=replace(desc,'的場合可以特殊召喚。','可以特殊召喚。');
+update texts set desc=replace(desc,'這個效果的發動後','此效果發動後');
+update texts set desc=replace(desc,'把此卡1個超量素材取除','去除此卡的1個超量素材');
+update texts set desc=replace(desc,'把此卡2個超量素材取除','去除此卡的2個超量素材');
+update texts set desc=replace(desc,'把此卡3個超量素材取除','去除此卡的3個超量素材');
+update texts set desc=replace(desc,'把此卡4個超量素材取除','去除此卡的4個超量素材');
+update texts set desc=replace(desc,'」卡片','」卡');
+update texts set desc=replace(desc,'」卡','」卡片');
+update texts set desc=replace(desc,'才能發動','可以發動');
+UPDATE texts SET desc=REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A');
+UPDATE texts SET desc=REPLACE(desc,x'0A', x'0D0A');
+update texts set desc=replace(desc,'·','、');
+update texts set desc=replace(desc,'．','、');
+update texts set desc=replace(desc,'・','、');
+update texts set desc=replace(desc,'＋','+');
+
+extra:
+update texts set desc=replace(desc,'10星','等級10');
+update texts set desc=replace(desc,'11星','等級11');
+update texts set desc=replace(desc,'12星','等級12');
+update texts set desc=replace(desc,'1星','等級1');
+update texts set desc=replace(desc,'2星','等級2');
+update texts set desc=replace(desc,'3星','等級3');
+update texts set desc=replace(desc,'4星','等級4');
+update texts set desc=replace(desc,'5星','等級5');
+update texts set desc=replace(desc,'6星','等級6');
+update texts set desc=replace(desc,'7星','等級7');
+update texts set desc=replace(desc,'8星','等級8');
+update texts set desc=replace(desc,'9星','等級9');
+update texts set desc=replace(desc,'持有者手牌','持有者的手牌');
+update texts set desc=replace(desc,'持有者牌組','持有者的牌組');
+update texts set desc=replace(desc,'​','');
+update texts set name=replace(name,'​','');
+update texts set desc=replace(desc,'(','（');
+update texts set desc=replace(desc,')','）');
+
+update texts set desc=replace(desc,'「」','「'||name||'」');
+update datas set ot=3 where ot!=2;
+
+test:
+select id,alias,type,atk,def,level,race,attribute from datas;
+.exit
+
+distinct:
+SELECT DISTINCT name FROM texts;
+SELECT name FROM datas, texts WHERE datas.id==texts.id AND (NOT datas.type==0x4011 OR datas.alias==0) AND (datas.type==0x4011 OR abs(datas.id-datas.alias)>=10);
+
+卡名：
+dash->衝刺
+rush->衝鋒
+rapid->迅速
+barrier->防護罩
+red->真紅
+crimson->深紅
+psycho->念力
+ギア・フリード->基爾弗利德
+番茄
+オプション->子機
+マルチプル->副機
+storm/squall->風暴
+tempest->暴風
+
+用語：
+升級召喚
+靈擺召喚、靈擺刻度
+代幣
+計數器
+生命值
+プレイ：操作
+通常のドロー：通常抽牌
+同一チェーン：相同連鎖串
+一組：整組
+手札制限枚数（手札枚数制限）：手牌上限
+怪獸區域、魔法與陷阱區域、場地區域、靈擺區域
+此卡的卡名在規則上當作
+上方、下方
+Sモンスターのチューナー：協調同步怪獸
+
+舊版敘述：
+このカードは生け贄なしで召喚する事ができる
+発動する場合
+相手ターンにも使用/相手ターンでも使用
+
+效果敘述：
+對手不能以oo當作對象：只影響對手的怪獸
+oo不會成為對象：也影響我方的怪獸
+このカードは通常召喚...：此卡不能通常召喚(用來搜尋特殊召喚怪獸)
+このカードはリリースなしで召喚する事ができる：此卡可以不用解放來召喚
+さらに/：那之後
+発動するターン/召喚するターン/：...的整回合中
+...したターン、/：...過的回合
+墓地に戻/墓地へ戻/：回到墓地
+相手ターンでも発動/：在對手回合也能發動
+墓地へ送られたターンには発動できない/：送去墓地的回合不能發動
+元々の持ち主に戻/：還給原持有者
+特殊召喚怪獸：...可以特殊召喚/只能...特殊召喚
+額外：只能...從額外牌組特殊召喚/只能...特殊召喚
+次數：各能使用1次、只有1次能使用其中1個
+唯一：在場上只能表側表示存在1隻
+１ターンに１度しか特殊召喚：1回合只能特殊召喚1次
+只要此卡在場上...
+不能對應此卡的發動來發動...
+もう１度だけ攻撃/もう１度攻撃/：再度攻擊
+給此卡放置...魔力計數器
+自身と同名のモンスターを素材：用和自身同名的怪獸為素材
+されている場合/：已被...
+
+檢查：
+發動的回合
