@@ -1,1 +1,2 @@
 *.conf eol=crlf
+*.txt eol=crlf
