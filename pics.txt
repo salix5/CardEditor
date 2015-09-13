@@ -1,13 +1,6 @@
-#wp: jp=10,kr=5,en=10
+#wp: jp=5,kr=5,en=10
 #pre-release
-total:13
 
 #OCG/TCG
-pp17:20
-JF15:5
-VJ:1
-WJ:1
-remake:6
-total:33
 
 #token
