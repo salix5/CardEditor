@@ -151,6 +151,7 @@ update texts set desc=replace(desc,'指示物','計數器');
 update texts set desc=replace(desc,'基本分','生命值');
 update texts set desc=replace(desc,'丟棄','捨棄');
 update texts set desc=replace(desc,'把這個效果發動','發動此效果');
+update texts set desc=replace(desc,'把這張卡發動','發動此卡');
 update texts set desc=replace(desc,'這張卡','此卡');
 update texts set desc=replace(desc,'對方','對手');
 update texts set desc=replace(desc,'1只','1隻');
