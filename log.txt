@@ -135,6 +135,9 @@ U+FF65(半形片假名中點)･
 卡名的音界號：使用‧(2027)
 系列名的中點：使用.(002e)
 
+連字號：
+U+FF0D(全形hyphen-minus)－
+
 乘號：
 U+00D7(×)
 
@@ -178,6 +181,7 @@ update texts set desc=replace(desc,'11星','等級11');
 update texts set desc=replace(desc,'12星','等級12');
 update texts set desc=replace(desc,'。 ','。');
 update texts set desc=replace(desc,'給與','給予');
+update texts set desc=replace(desc,'蓋放','覆蓋');
 update texts set desc=replace(desc,'魔法師族','魔法使族');
 update texts set desc=replace(desc,'上級召喚','升級召喚');
 update texts set desc=replace(desc,'XYZ召喚','超量召喚');
