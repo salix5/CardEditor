@@ -188,8 +188,10 @@ update texts set desc=replace(desc,'XYZ召喚','超量召喚');
 update texts set desc=replace(desc,'XYZ素材','超量素材');
 update texts set desc=replace(desc,'XYZ怪獸','超量怪獸');
 update texts set desc=replace(desc,'使用其中任意','使用其中');
-
 update texts set desc=replace(desc,'自己','我方') where id<=9999;
+
+update texts set name=replace(name,'A','B');
+update texts set desc=replace(desc,'A','B');
 
 update texts set desc=replace(desc,'·','、');
 update texts set desc=replace(desc,'．','、');
