@@ -1,4 +1,15 @@
 紀錄：
+10/06
+"相異"修正
+AT12(笑容以外)
+
+10/05
+"那之後"修正
+和"之後牌組洗牌"類似的敘述刪除
+
+10/03
+"之前"修正
+
 09/13
 1033.6
 rebase:f815b
@@ -45,7 +56,7 @@ AT09(炒蛋以外)
 枚->張
 兩->2
 
-01/05
+15/01/05
 lflist
 先行卡string
 
@@ -111,135 +122,8 @@ strings:
 texts:
 迴轉調車、重機貨列車修正
 
-11/21
+14/11/21
 903完成
 rebase
 datas:
 龍探物擺、別名修正
-
-datas
-atk,def:
-陷阱怪獸加入卡片記載的原攻守、等級、屬性
-ot:
-902->ot
-梅林組->ot
-
-texts
-中點：
-U+00b7(中點)·
-U+2027(音界號)‧
-U+ff0e(全形句點)．
-U+30fb(片假名中點)・
-U+FF65(半形片假名中點)･
-效果敘述：使用、(3001)
-卡名的音界號：使用‧(2027)
-系列名的中點：使用.(002e)
-
-連字號：
-U+FF0D(全形hyphen-minus)－
-
-乘號：
-U+00D7(×)
-
-日文漢字：
-産 獣 衆 黒 悪 増
-容易與中文混淆
-
-SQL:
-update texts set desc=replace(desc,'手卡','手牌');
-update texts set desc=replace(desc,'卡組','牌組');
-update texts set desc=replace(desc,'調整','協調');
-update texts set desc=replace(desc,'同調','同步');
-update texts set desc=replace(desc,'指示物','計數器');
-update texts set desc=replace(desc,'基本分','生命值');
-update texts set desc=replace(desc,'丟棄','捨棄');
-update texts set desc=replace(desc,'把這個效果發動','發動此效果');
-update texts set desc=replace(desc,'把這張卡發動','發動此卡');
-update texts set desc=replace(desc,'這張卡','此卡');
-update texts set desc=replace(desc,'對方','對手');
-update texts set desc=replace(desc,'1只','1隻');
-update texts set desc=replace(desc,'2只','2隻');
-update texts set desc=replace(desc,'3只','3隻');
-update texts set desc=replace(desc,'4只','4隻');
-update texts set desc=replace(desc,'5只','5隻');
-update texts set desc=replace(desc,'①的','①');
-update texts set desc=replace(desc,'②的','②');
-update texts set desc=replace(desc,'③的','③');
-update texts set desc=replace(desc,'④的','④');
-update texts set desc=replace(desc,'⑤的','⑤');
-update texts set desc=replace(desc,'1星','等級1');
-update texts set desc=replace(desc,'2星','等級2');
-update texts set desc=replace(desc,'3星','等級3');
-update texts set desc=replace(desc,'4星','等級4');
-update texts set desc=replace(desc,'5星','等級5');
-update texts set desc=replace(desc,'6星','等級6');
-
-update texts set desc=replace(desc,'8星','等級8');
-update texts set desc=replace(desc,'9星','等級9');
-update texts set desc=replace(desc,'10星','等級10');
-update texts set desc=replace(desc,'11星','等級11');
-update texts set desc=replace(desc,'12星','等級12');
-update texts set desc=replace(desc,'。 ','。');
-update texts set desc=replace(desc,'給與','給予');
-update texts set desc=replace(desc,'蓋放','覆蓋');
-update texts set desc=replace(desc,'魔法師族','魔法使族');
-update texts set desc=replace(desc,'上級召喚','升級召喚');
-update texts set desc=replace(desc,'XYZ召喚','超量召喚');
-update texts set desc=replace(desc,'XYZ素材','超量素材');
-update texts set desc=replace(desc,'XYZ怪獸','超量怪獸');
-update texts set desc=replace(desc,'使用其中任意','使用其中');
-update texts set desc=replace(desc,'自己','我方') where id<=9999;
-
-update texts set name=replace(name,'A','B');
-update texts set desc=replace(desc,'A','B');
-
-update texts set desc=replace(desc,'·','、');
-update texts set desc=replace(desc,'．','、');
-update texts set desc=replace(desc,'・','、');
-update texts set desc=replace(desc,'​','');
-
-卡名：
-dash->衝刺
-rush->衝鋒
-rapid->迅速
-barrier->防護罩
-red->真紅
-crimson->深紅
-psycho->念力
-ギア・フリード->基亞弗利德
-番茄
-オプション->子機
-マルチプル->副機
-
-用語：
-升級召喚
-靈擺召喚、靈擺刻度
-代幣
-計數器
-生命值
-プレイ->操作
-只要此卡在場上...
-不能對應此卡的發動來發動...
-
-效果敘述：
-"這個回合，oo怪獸..."：包含這回合中任意時間進場的怪獸
-"現有的oo怪獸，這回合..."：只包含現有的怪獸
-"對手不能以oo當作對象"：只影響對手的怪獸
-"oo不會成為對象"：也影響我方的怪獸
-"このカードは通常召喚..."：此卡不能通常召喚(用來搜尋特殊召喚怪獸)
-"このカードはリリースなしで召喚する事ができる"/"このカードは生け贄なしで召喚する事ができる"：此卡可以不用解放來召喚
-"さらに"：之後
-"発動するターン"、"召喚するターン"：...的整回合中
-"...したターン、"：...過的回合
-(KR)：韓版特有卡
-それぞれ自分、魔封的芬芳、破術師
-墓地に戻/墓地へ戻：回到墓地
-"相手ターンでも発動"、"相手ターンにも使用"、"相手ターンでも使用"：在對手回合也能發動
-墓地へ送られたターンには発動できない：在送去墓地的回合不能發動
-
-提示字串：
-是否現在發動此卡的效果？
-
-大師規則2：
-exe: 2014.2
-script,textures: 165dc
