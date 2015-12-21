@@ -88,6 +88,8 @@ update texts set desc=replace(desc,'原本種族','原種族');
 update texts set desc=replace(desc,'原本持有者','原持有者');
 update texts set desc=replace(desc,'里側','裡側');
 update texts set desc=replace(desc,'不能攻擊宣言','不能進行攻擊宣言');
+update texts set desc=replace(desc,'暗屬性','闇屬性');
+update texts set desc=replace(desc,'、暗、','、闇、');
 
 update texts set desc=replace(desc,'自己','我方') where id<=9999;
 update datas set ot=3 where ot=4 and id<=9999;
