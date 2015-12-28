@@ -77,6 +77,7 @@ update texts set desc=replace(desc,'上級召喚','升級召喚');
 update texts set desc=replace(desc,'XYZ召喚','超量召喚');
 update texts set desc=replace(desc,'XYZ素材','超量素材');
 update texts set desc=replace(desc,'XYZ怪獸','超量怪獸');
+update texts set desc=replace(desc,'衍生物','代幣');
 update texts set desc=replace(desc,'使用其中任意','使用其中');
 update texts set desc=replace(desc,'這個效果在','此效果在');
 update texts set desc=replace(desc,'【モンスター効果】','【怪獸效果】');
