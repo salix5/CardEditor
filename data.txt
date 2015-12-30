@@ -107,6 +107,12 @@ template:
 update texts set name=replace(name,'A','B');
 update texts set desc=replace(desc,'A','B');
 
+
+check:
+卡發動的回合
+效果發動的回合
+
+
 卡名：
 dash->衝刺
 rush->衝鋒
