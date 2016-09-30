@@ -1,4 +1,4 @@
-datas
+﻿datas
 atk,def:
 陷阱怪獸加入卡片記載的原攻守、等級、屬性
 ot:
@@ -58,18 +58,20 @@ update texts set desc=replace(desc,'3星','等級3');
 update texts set desc=replace(desc,'4星','等級4');
 update texts set desc=replace(desc,'5星','等級5');
 update texts set desc=replace(desc,'6星','等級6');
+update texts set desc=replace(desc,'7星','等級7');
 update texts set desc=replace(desc,'8星','等級8');
 update texts set desc=replace(desc,'9星','等級9');
-update texts set desc=replace(desc,'抽1張。','抽1張牌。');
-update texts set desc=replace(desc,'抽2張。','抽2張牌。');
-update texts set desc=replace(desc,'抽3張。','抽3張牌。');
-update texts set desc=replace(desc,'抽4張。','抽4張牌。');
-update texts set desc=replace(desc,'抽5張。','抽5張牌。');
-update texts set desc=replace(desc,'抽6張。','抽6張牌。');
+update texts set desc=replace(desc,'抽1張。','抽1張卡。');
+update texts set desc=replace(desc,'抽2張。','抽2張卡。');
+update texts set desc=replace(desc,'抽3張。','抽3張卡。');
+update texts set desc=replace(desc,'抽4張。','抽4張卡。');
+update texts set desc=replace(desc,'抽5張。','抽5張卡。');
+update texts set desc=replace(desc,'抽6張。','抽6張卡。');
 update texts set desc=replace(desc,'。 ','。');
 update texts set desc=replace(desc,'給與','給予');
 update texts set desc=replace(desc,'复','復');
 update texts set desc=replace(desc,'蓋放','覆蓋');
+update texts set desc=replace(desc,'裏側','裡側');
 update texts set desc=replace(desc,'魔法師族','魔法使族');
 update texts set desc=replace(desc,'念動力族','超能族');
 update texts set desc=replace(desc,'昆虫族','昆蟲族');
@@ -77,7 +79,6 @@ update texts set desc=replace(desc,'上級召喚','升級召喚');
 update texts set desc=replace(desc,'XYZ召喚','超量召喚');
 update texts set desc=replace(desc,'XYZ素材','超量素材');
 update texts set desc=replace(desc,'XYZ怪獸','超量怪獸');
-update texts set desc=replace(desc,'衍生物','代幣');
 update texts set desc=replace(desc,'使用其中任意','使用其中');
 update texts set desc=replace(desc,'這個效果在','此效果在');
 update texts set desc=replace(desc,'【モンスター効果】','【怪獸效果】');
@@ -87,13 +88,22 @@ update texts set desc=replace(desc,'原本等級','原等級');
 update texts set desc=replace(desc,'原本屬性','原屬性');
 update texts set desc=replace(desc,'原本種族','原種族');
 update texts set desc=replace(desc,'原本持有者','原持有者');
+update texts set desc=replace(desc,'同盟怪獸','聯合怪獸');
 update texts set desc=replace(desc,'里側','裡側');
 update texts set desc=replace(desc,'不能攻擊宣言','不能進行攻擊宣言');
 update texts set desc=replace(desc,'暗屬性','闇屬性');
 update texts set desc=replace(desc,'、暗、','、闇、');
-
-update texts set desc=replace(desc,'自己','我方') where id<=9999;
-update datas set ot=3 where ot=4 and id<=9999;
+update texts set desc=replace(desc,'或者','或');
+update texts set desc=replace(desc,'同1次的戰鬥階段','1次戰鬥階段');
+update texts set desc=replace(desc,'的場合可以特殊召喚。','可以特殊召喚。');
+update texts set desc=replace(desc,'這個效果的發動後','此效果發動後');
+update texts set desc=replace(desc,'對手手牌','對手的手牌');
+update texts set desc=replace(desc,'把此卡1個超量素材取除','去除此卡的1個超量素材');
+update texts set desc=replace(desc,'把此卡2個超量素材取除','去除此卡的2個超量素材');
+update texts set desc=replace(desc,'把此卡3個超量素材取除','去除此卡的3個超量素材');
+update texts set desc=replace(desc,'把此卡4個超量素材取除','去除此卡的4個超量素材');
+update texts set desc=replace(desc,'」卡片','」卡');
+update texts set desc=replace(desc,'」卡','」卡片');
 
 update texts set desc=replace(desc,'·','、');
 update texts set desc=replace(desc,'．','、');
@@ -101,12 +111,14 @@ update texts set desc=replace(desc,'・','、');
 update texts set desc=replace(desc,'＋','+');
 update texts set desc=replace(desc,'​','');
 update texts set name=replace(name,'​','');
+UPDATE texts SET desc=REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A');
+UPDATE texts SET desc=REPLACE(desc,x'0A', x'0D0A');
 
+update texts set desc=replace(desc,'自己','我方');
 
-template:
-update texts set name=replace(name,'A','B');
-update texts set desc=replace(desc,'A','B');
-
+test:
+select id,alias,type,atk,def,level,race,attribute from datas;
+.exit
 
 check:
 卡發動的回合
@@ -149,11 +161,13 @@ oo不會成為對象：也影響我方的怪獸
 (KR)：韓版特有卡
 それぞれ自分/魔封的芬芳/破術師
 墓地に戻/墓地へ戻/：回到墓地
-相手ターンでも発動/相手ターンにも使用(o1d)/相手ターンでも使用(old)/：此效果在對手回合也能發動
+相手ターンでも発動/相手ターンにも使用(o1d)/相手ターンでも使用(old)/：在對手回合也能發動
 墓地へ送られたターンには発動できない/：送去墓地的回合不能發動
 元々の持ち主に戻/：還給原持有者
-特殊召喚怪獸：...才能特殊召喚/只能...特殊召喚
+特殊召喚怪獸：...可以特殊召喚/只能...特殊召喚
 額外：只能...從額外牌組特殊召喚/只能...特殊召喚
+次數：各能使用1次、只有1次能使用其中1個
+唯一：在場上只能表側表示存在1隻
 
 大師規則2：
 exe: 2014.2
