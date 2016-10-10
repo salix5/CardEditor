@@ -90,7 +90,6 @@ update texts set desc=replace(desc,'原本種族','原種族');
 update texts set desc=replace(desc,'原本持有者','原持有者');
 update texts set desc=replace(desc,'同盟怪獸','聯合怪獸');
 update texts set desc=replace(desc,'里側','裡側');
-update texts set desc=replace(desc,'不能攻擊宣言','不能進行攻擊宣言');
 update texts set desc=replace(desc,'暗屬性','闇屬性');
 update texts set desc=replace(desc,'、暗、','、闇、');
 update texts set desc=replace(desc,'或者','或');
@@ -146,9 +145,10 @@ tempest->暴風
 代幣
 計數器
 生命值
-プレイ->操作
+プレイ：操作
 只要此卡在場上...
 不能對應此卡的發動來發動...
+通常のドロー：通常抽牌
 
 效果敘述：
 對手不能以oo當作對象：只影響對手的怪獸
