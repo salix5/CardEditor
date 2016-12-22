@@ -1,4 +1,4 @@
-#wp: jp=5,kr=5,en=10
+#wp: kr=5,en=10
 #pre-release
 
 #OCG/TCG
