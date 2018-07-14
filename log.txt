@@ -4,6 +4,7 @@
 劍鬥獸全體校正
 同步string.conf
 同步sound、textures
+上方 -> 上面
 
 18/7/7
 盜壺賊
