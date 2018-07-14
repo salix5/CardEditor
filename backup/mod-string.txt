@@ -1,0 +1,57 @@
+#mod menu strings
+!system 2012 玩家資料
+!system 2013 排名
+!system 2014 伺服器狀態
+!system 2015 FAQ
+!system 2016 幫助
+!system 2017 主選單
+!system 2023 關於
+#mod strings
+!system 1991 新卡紀錄
+!system 1992 更新紀錄
+!system 1993 AI牌組
+!system 1994 顯示私人房間
+!system 1995 等級
+!system 1996 字母
+!system 1997 排序：
+!system 1998 連線
+!system 1999 顯示動畫卡
+!system 2000 清除
+!system 2001 Searching for opponent.
+!system 2002 Searching for opponent..
+!system 2003 Searching for opponent...
+!system 2006 不計積分模式
+!system 2007 AI腳本：
+!system 2008 AI牌組選擇：
+!system 2009 [隨機牌組]
+!system 2010 擴展記錄
+!system 2011 對話
+!system 2018 1vs2
+!system 2019 騎乘決鬥
+!system 2020 動漫
+!system 2021 過濾:
+!system 2022 AI模式(beta)
+!system 2024 說明:
+!system 2025 確定要永久刪除此牌組嗎?
+!system 2026 刪除成功
+!system 2027 刪除
+!system 2028 音量
+!system 2029 房間:
+!system 2030 玩家列表:
+!system 2031 服務器忙碌中. 請稍後再試.
+!system 2032 沒有房間
+!system 2033 目前服務器中沒有開放的房間. 請點選'建立主機'來建立房間.
+!system 2034 新的 YGOPro 版本
+!system 2035 新的版本 %s 釋出! 你想要前往下載頁面嗎?
+!system 2036 連接失敗或語法錯誤
+!system 2037 無法打開網址
+!system 2038 無法解析服務器數據
+!system 2039  %s 伺服器需要一個帳號才能使用.
+!system 2040 你想要前往註冊網頁嗎? http://%s
+!system 2041 伺服器:
+!system 2042 房間密碼:
+!system 2043 房間名稱:
+!system 2044 線上對戰
+!system 2045 多人連線
+!system 2046 開啟音效
+!system 2047 開啟音樂
