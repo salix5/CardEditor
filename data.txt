@@ -1,9 +1,6 @@
 ﻿datas
 atk,def:
 陷阱怪獸加入卡片記載的原攻守、等級、屬性
-ot:
-902->ot
-梅林組->ot
 
 texts
 中點：
@@ -90,8 +87,6 @@ update texts set desc=replace(desc,'原本種族','原種族');
 update texts set desc=replace(desc,'原本持有者','原持有者');
 update texts set desc=replace(desc,'同盟怪獸','聯合怪獸');
 update texts set desc=replace(desc,'里側','裡側');
-update texts set desc=replace(desc,'暗屬性','闇屬性');
-update texts set desc=replace(desc,'、暗、','、闇、');
 update texts set desc=replace(desc,'或者','或');
 update texts set desc=replace(desc,'同1次的戰鬥階段','1次戰鬥階段');
 update texts set desc=replace(desc,'的場合可以特殊召喚。','可以特殊召喚。');
