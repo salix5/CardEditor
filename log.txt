@@ -1,4 +1,10 @@
 紀錄：
+18/11/21
+string.conf校正
+系列名修正
+地縛神改為音譯
+同步strings.conf(e2d4a)
+
 18/11/18
 同步strings.conf(b565e)
 
