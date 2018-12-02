@@ -112,7 +112,7 @@ update texts set desc=replace(desc,')','）');
 UPDATE texts SET desc=REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A');
 UPDATE texts SET desc=REPLACE(desc,x'0A', x'0D0A');
 
-update texts set desc=replace(desc,'自己','我方');
+update texts set desc=replace(desc,'「」','「'||name||'」');
 
 test:
 select id,alias,type,atk,def,level,race,attribute from datas;
@@ -126,7 +126,7 @@ barrier->防護罩
 red->真紅
 crimson->深紅
 psycho->念力
-ギア・フリード->基亞弗利德
+ギア・フリード->基爾弗利德
 番茄
 オプション->子機
 マルチプル->副機
@@ -173,6 +173,9 @@ oo不會成為對象：也影響我方的怪獸
 １ターンに１度しか特殊召喚：1回合只能特殊召喚1次
 只要此卡在場上...
 不能對應此卡的發動來發動...
+もう１度だけ攻撃/もう１度攻撃/：再度攻擊
+は以下の効果を得る。
+
 
 檢查：
 卡發動的回合
