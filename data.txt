@@ -113,7 +113,7 @@ UPDATE texts SET desc=REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A');
 UPDATE texts SET desc=REPLACE(desc,x'0A', x'0D0A');
 
 update texts set desc=replace(desc,'「」','「'||name||'」');
-update datas set ot=3 where ot!-2;
+update datas set ot=3 where ot!=2;
 
 test:
 select id,alias,type,atk,def,level,race,attribute from datas;
