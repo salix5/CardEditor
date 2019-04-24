@@ -1,4 +1,9 @@
 紀錄：
+19/4/24
+RIRA
+同步strings.conf(f28da)
+TCG 4月卡表
+
 19/4/12
 20TH B~C
 復刻：DBSW、DBDS、DBHS
