@@ -1,4 +1,0 @@
-//
-// File Checksum Integrity Verifier version 2.05.
-//
-a99202a985ae1486ba3ee2b0eb44dc830dc0dc5b ygopro0.exe

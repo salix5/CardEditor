@@ -1,6 +1,0 @@
-#wp: kr=5,en=10
-#pre-release
-
-#OCG/TCG
-
-#token
