@@ -1,4 +1,8 @@
 紀錄：
+19/6/24
+DP22
+同步strings.conf(dbb12)
+
 19/5/30
 CP19
 同步strings.conf(ea86f)
