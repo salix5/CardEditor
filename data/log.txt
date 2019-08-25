@@ -1,4 +1,8 @@
 紀錄：
+19/8/25
+DBMF
+同步strings.conf(29f69)
+
 19/8/3
 CHIM
 同步strings.conf(f2301)
