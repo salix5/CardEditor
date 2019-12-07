@@ -113,12 +113,17 @@ update texts set desc=replace(desc,'​','');
 update texts set name=replace(name,'​','');
 update texts set desc=replace(desc,'(','（');
 update texts set desc=replace(desc,')','）');
+
 update texts set desc=replace(desc,'「」','「'||name||'」');
 update datas set ot=3 where ot!=2;
 
 test:
 select id,alias,type,atk,def,level,race,attribute from datas;
 .exit
+
+distinct:
+SELECT DISTINCT name FROM texts;
+SELECT name FROM datas, texts WHERE datas.id==texts.id AND (NOT datas.type==0x4011 OR datas.alias==0) AND (datas.type==0x4011 OR abs(datas.id-datas.alias)>=10);
 
 卡名：
 dash->衝刺
@@ -181,5 +186,4 @@ oo不會成為對象：也影響我方的怪獸
 されている場合/：已被...
 
 檢查：
-卡發動的回合
-效果發動的回合
+發動的回合
