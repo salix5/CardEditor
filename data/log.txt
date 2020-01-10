@@ -1,4 +1,22 @@
 紀錄：
+20/3/17
+同步strings.conf(7c5a5)
+"軟泥"改為"史萊姆"
+刪除通常怪獸敘述中的"青蛙"
+
+20/3/14
+復刻：DBSS、SD37、SR10
+
+20/2/28
+同步strings.conf(f944f)
+更新禁卡表
+
+20/1/26
+同步strings.conf(2daff)
+
+20/1/14
+同步strings.conf(c7614)
+
 19/12/20
 復刻：SR09*
 更新1月禁卡表
@@ -14,7 +32,7 @@ Abyss -> 深淵
 "爆裂模式"相關卡片校正
 
 19/12/5
-復刻：DP23*、LVP3
+復刻：DP23*、LVP2、LVP3*
 特典系復刻更新到TTPR、19TP Vol.4
 同步strings.conf(f10c4)
 
