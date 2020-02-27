@@ -1,4 +1,8 @@
 紀錄：
+20/2/28
+同步strings.conf(f944f)
+更新禁卡表
+
 20/1/26
 同步strings.conf(2daff)
 
