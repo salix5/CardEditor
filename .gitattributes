@@ -1,1 +1,3 @@
-* -text
+*.conf text eol=crlf
+*.txt text eol=crlf
+*.cdb binary
