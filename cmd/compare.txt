@@ -1,0 +1,2 @@
+select id,alias,type,atk,def,level,race,attribute from datas;
+.exit
