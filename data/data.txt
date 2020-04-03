@@ -87,39 +87,10 @@ update texts set desc=replace(desc,'把此卡4個超量素材取除','去除此�
 update texts set desc=replace(desc,'」卡片','」卡');
 update texts set desc=replace(desc,'」卡','」卡片');
 update texts set desc=replace(desc,'才能發動','可以發動');
-UPDATE texts SET desc=REPLACE(desc,x'0A', x'0D0A');
 update texts set desc=replace(desc,'·','、');
 update texts set desc=replace(desc,'．','、');
 update texts set desc=replace(desc,'・','、');
 update texts set desc=replace(desc,'＋','+');
-
-extra:
-update texts set desc=replace(desc,'10星','等級10');
-update texts set desc=replace(desc,'11星','等級11');
-update texts set desc=replace(desc,'12星','等級12');
-update texts set desc=replace(desc,'1星','等級1');
-update texts set desc=replace(desc,'2星','等級2');
-update texts set desc=replace(desc,'3星','等級3');
-update texts set desc=replace(desc,'4星','等級4');
-update texts set desc=replace(desc,'5星','等級5');
-update texts set desc=replace(desc,'6星','等級6');
-update texts set desc=replace(desc,'7星','等級7');
-update texts set desc=replace(desc,'8星','等級8');
-update texts set desc=replace(desc,'9星','等級9');
-update texts set desc=replace(desc,'持有者手牌','持有者的手牌');
-update texts set desc=replace(desc,'持有者牌組','持有者的牌組');
-update texts set desc=replace(desc,'​','');
-update texts set name=replace(name,'​','');
-update texts set desc=replace(desc,'(','（');
-update texts set desc=replace(desc,')','）');
-
-UPDATE texts SET desc=REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A');
-update texts set desc=replace(desc,'「」','「'||name||'」');
-update datas set ot=3 where ot!=2;
-
-test:
-select id,alias,type,atk,def,level,race,attribute from datas;
-.exit
 
 distinct:
 SELECT DISTINCT name FROM texts;
