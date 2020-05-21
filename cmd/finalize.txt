@@ -17,6 +17,6 @@ update texts set name=replace(name,'​','');
 update texts set desc=replace(desc,'(','（');
 update texts set desc=replace(desc,')','）');
 
-UPDATE texts SET desc=REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A');
+UPDATE texts SET desc=REPLACE(REPLACE(REPLACE(desc, x'0D0A', x'0A'), x'0D', x'0A'), x'0A',x'0D0A');
 update texts set desc=replace(desc,'「」','「'||name||'」');
 update datas set ot=3 where ot!=2;
