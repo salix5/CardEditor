@@ -1,4 +1,8 @@
 紀錄：
+20/7/9
+SD39
+同步strings.conf(1c367)
+
 20/7/3
 CP20
 同步strings.conf(0334f)
