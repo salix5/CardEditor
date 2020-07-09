@@ -1,4 +1,17 @@
 紀錄：
+20/8/6
+Tellarknight->星守
+Stellarknight->星守之星輝士
+Satellarknight->星守之星因士
+
+20/7/16
+同步strings.conf(cf564)
+校正冰結界
+
+20/7/9
+SD39
+同步strings.conf(1c367)
+
 20/7/3
 CP20
 同步strings.conf(0334f)
