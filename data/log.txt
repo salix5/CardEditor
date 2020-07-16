@@ -1,4 +1,8 @@
 紀錄：
+20/7/16
+同步strings.conf(cf564)
+校正冰結界
+
 20/7/9
 SD39
 同步strings.conf(1c367)
