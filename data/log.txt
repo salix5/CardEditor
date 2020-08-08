@@ -1,4 +1,12 @@
 紀錄：
+20/8/18
+更新PHRA
+
+20/8/16
+エルドリッチ->黃金國巫妖
+エルドリクシル->黃金國靈藥
+同步strings.conf(5da55)
+
 20/8/6
 Tellarknight->星守
 Stellarknight->星守之星輝士
