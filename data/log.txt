@@ -1,4 +1,18 @@
 紀錄：
+20/10/25
+同步strings.conf(a1f658b8fbacc7f908ef18c06d93f58fcd2e66ee)
+特殊召喚怪獸校正
+
+20/10/1
+同步strings.conf(07972be96b0dae368832a01c49a4b8354019a3c4)
+Tellarknight->星騎士
+Stellarknight->恆星騎士
+Satellarknight->衛星騎士
+
+20/9/21
+同步strings.conf(54a5be68f0e2e9d8b2a32be2ca13c4f0e1981a2c)
+更新禁卡表
+
 20/8/30
 SR11
 
