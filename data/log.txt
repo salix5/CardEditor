@@ -1,4 +1,13 @@
 紀錄：
+20/11/21
+同步strings.conf(bb406b84d8b57bd1ca5ad6ed6498687cafd6639a)
+エルドリッチ->埃爾德里奇
+
+20/11/4
+ドラグマ->教導
+BLVO
+超量怪獸(p.2完畢)
+
 20/10/25
 同步strings.conf(a1f658b8fbacc7f908ef18c06d93f58fcd2e66ee)
 特殊召喚怪獸校正
