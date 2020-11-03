@@ -1,4 +1,8 @@
 紀錄：
+20/11/4
+ドラグマ->教導
+BLVO
+
 20/10/25
 同步strings.conf(a1f658b8fbacc7f908ef18c06d93f58fcd2e66ee)
 特殊召喚怪獸校正
