@@ -1,4 +1,9 @@
 紀錄：
+20/12/3
+SD40
+同步strings.conf(5893ab8031a013f4e45785cd3ed59143ece41a60)
+超量怪獸(p.7完畢)
+
 20/11/21
 同步strings.conf(bb406b84d8b57bd1ca5ad6ed6498687cafd6639a)
 エルドリッチ->埃爾德里奇
