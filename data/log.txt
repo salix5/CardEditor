@@ -1,4 +1,7 @@
 紀錄：
+21/1/5
+移除 -> 除外
+
 20/12/31
 同步strings.conf(89c10ee767509137dc79cd7e994f6e09accaa934)
 SLT1, PGB1
