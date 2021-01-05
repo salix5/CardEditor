@@ -99,8 +99,24 @@ SELECT name FROM datas, texts WHERE datas.id==texts.id AND (NOT datas.type==0x40
 .exit
 
 replace:
-update texts set name=replace(name,'A','B');
-update texts set desc=replace(desc,'A','B');
+update texts set name=replace(name,'x1','x2');
+update texts set desc=replace(desc,'x1','x2');
+update texts set str1=replace(str1,'x1','x2');
+update texts set str2=replace(str2,'x1','x2');
+update texts set str3=replace(str3,'x1','x2');
+update texts set str4=replace(str4,'x1','x2');
+update texts set str5=replace(str5,'x1','x2');
+update texts set str6=replace(str6,'x1','x2');
+update texts set str7=replace(str7,'x1','x2');
+update texts set str8=replace(str8,'x1','x2');
+update texts set str9=replace(str9,'x1','x2');
+update texts set str10=replace(str10,'x1','x2');
+update texts set str11=replace(str11,'x1','x2');
+update texts set str12=replace(str12,'x1','x2');
+update texts set str13=replace(str13,'x1','x2');
+update texts set str14=replace(str14,'x1','x2');
+update texts set str15=replace(str15,'x1','x2');
+update texts set str16=replace(str16,'x1','x2');
 
 卡名：
 dash->衝刺
