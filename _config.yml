@@ -1,0 +1,8 @@
+exclude:
+    - data
+    - deck
+    - replay
+    - script
+    - single
+    - sound
+    - textures
