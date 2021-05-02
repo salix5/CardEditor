@@ -93,8 +93,6 @@ update texts set desc=replace(desc,'・','、');
 update texts set desc=replace(desc,'＋','+');
 
 distinct:
-SELECT DISTINCT name FROM texts;
-.exit
 SELECT name FROM datas, texts WHERE datas.id==texts.id AND (NOT datas.type==0x4011 OR datas.alias==0) AND (datas.type==0x4011 OR abs(datas.id-datas.alias)>=10);
 .exit
 
