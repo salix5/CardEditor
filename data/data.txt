@@ -120,8 +120,12 @@ update texts set str16=replace(str16,'x1','x2');
 setcode:
 AND ((setcode & 0xfff) == ($setcode & 0x0fff) AND (setcode & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 16 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 16 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 32 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 32 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 48 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 48 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000))
 
-count:
-SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 
+# of cards:
+SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000
+
+No.
+SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000 
+AND name like 'No.%'
 
 
 卡名：
@@ -154,6 +158,7 @@ tempest->暴風
 此卡的卡名在規則上當作
 上方、下方
 Sモンスターのチューナー：協調同步怪獸
+度に発動する：每次...就發動
 
 舊版敘述：
 このカードは生け贄なしで召喚する事ができる
