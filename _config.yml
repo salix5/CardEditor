@@ -1,9 +1,11 @@
 exclude:
     - data/*.txt
-    - deck
-    - replay
-    - script
-    - single
-    - sound
-    - textures
-    - expansions/*.cdb
+    - deck/
+    - expansions/
+    - replay/
+    - script/
+    - single/
+    - sound/
+    - textures/
+    - /*.conf
+    - /*.cdb
