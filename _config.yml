@@ -9,3 +9,4 @@ exclude:
     - textures/
     - /*.conf
     - /*.cdb
+    - pics/field/
