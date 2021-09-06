@@ -117,6 +117,9 @@ update texts set str14=replace(str14,'x1','x2');
 update texts set str15=replace(str15,'x1','x2');
 update texts set str16=replace(str16,'x1','x2');
 
+replace setcode:
+update datas set setcode=0x where setcode=0x;
+
 setcode:
 AND ((setcode & 0xfff) == ($setcode & 0x0fff) AND (setcode & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 16 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 16 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 32 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 32 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 48 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 48 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000))
 
@@ -144,11 +147,6 @@ storm/squall->風暴
 tempest->暴風
 
 用語：
-升級召喚
-靈擺召喚、靈擺刻度
-代幣
-計數器
-生命值
 プレイ：操作
 通常のドロー：通常抽牌
 同一チェーン：相同連鎖串
