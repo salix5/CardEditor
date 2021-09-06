@@ -7,6 +7,4 @@ exclude:
     - single/
     - sound/
     - textures/
-    - /*.conf
-    - /*.cdb
     - pics/field/
