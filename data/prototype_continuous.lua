@@ -1,13 +1,9 @@
 --[[
-	id：數值改成卡片ID
 	e?：取代為效果代號
 	yyy：取代為字串編號，從0開始
 	SetCountLimit：預設為「這個卡名的效果1回合只能使用1次」
 ]]
-local id=1
-local offset=100
-_G["c"..id]={}
-local s=_G["c"..id]
+local s,id,o=GetID()
 function s.initial_effect(c)
 	--一般永續效果，只影響自身
 	local e?=Effect.CreateEffect(c)
@@ -31,7 +27,7 @@ function s.initial_effect(c)
 	e?:SetValue(s.)
 	c:RegisterEffect(e?)
 	
-	--改變遊戲狀態的永續效果，此卡...的場合
+	--觸發型永續效果，此卡...的場合
 	local e?=Effect.CreateEffect(c)
 	e?:SetDescription(aux.Stringid(id,yyy))
 	e?:SetType(EFFECT_TYPE_SINGLE+EFFECT_TYPE_CONTINUOUS)
@@ -41,7 +37,7 @@ function s.initial_effect(c)
 	e?:SetOperation(s.)
 	c:RegisterEffect(e?)
 	
-	--改變遊戲狀態的永續效果，其他事件
+	--觸發型永續效果，其他事件
 	local e?=Effect.CreateEffect(c)
 	e?:SetDescription(aux.Stringid(id,yyy))
 	e?:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)

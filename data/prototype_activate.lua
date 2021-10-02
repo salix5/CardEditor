@@ -1,13 +1,9 @@
 --[[
-	id：數值改成卡片ID
 	e?：取代為效果代號
 	yyy：取代為字串編號，從0開始
 	SetCountLimit：預設為「這個卡名的效果1回合只能使用1次」
 ]]
-local id=1
-local offset=100
-_G["c"..id]={}
-local s=_G["c"..id]
+local s,id,o=GetID()
 function s.initial_effect(c)
 	--啟動效果
 	local e?=Effect.CreateEffect(c)

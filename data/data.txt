@@ -145,6 +145,7 @@ psycho->念力
 マルチプル->副機
 storm/squall->風暴
 tempest->暴風
+psychic->超能
 
 用語：
 プレイ：操作
