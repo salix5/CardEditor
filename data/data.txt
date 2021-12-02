@@ -126,9 +126,12 @@ AND ((setcode & 0xfff) == ($setcode & 0x0fff) AND (setcode & 0xf000 & ($setcode 
 # of cards:
 SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000
 
+# of scripts:
+SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000 AND (NOT type & 0x10 OR type & 0x1000000)
+
 No.
 SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000 
-AND name like 'No.%'
+AND name like 'No.%';
 
 
 卡名：
@@ -147,6 +150,9 @@ storm/squall->風暴
 tempest->暴風
 psychic->超能
 wyvern->飛龍
+ドール：玩偶
+人形(にんぎょう)：人形
+ゴーストリックの人形(ひとがた)：鬼計的形代
 
 用語：
 プレイ：操作
