@@ -1,8 +1,4 @@
-﻿datas
-atk,def:
-陷阱怪獸加入卡片記載的原攻守、等級、屬性
-
-texts
+﻿texts
 中點：
 U+00b7(中點)·
 U+2027(音界號)‧
@@ -20,6 +16,11 @@ U+2500(Box Drawings Light Horizontal)─
 
 乘號：
 U+00D7(×)
+
+引號：
+""
+“”
+
 
 日文漢字：
 産 獣 衆 黒 悪 増 呑
@@ -118,7 +119,7 @@ update texts set str15=replace(str15,'x1','x2');
 update texts set str16=replace(str16,'x1','x2');
 
 replace setcode:
-update datas set setcode=0x where setcode=0x;
+update datas set setcode=  where setcode=  ;
 
 setcode:
 AND ((setcode & 0xfff) == ($setcode & 0x0fff) AND (setcode & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 16 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 16 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 32 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 32 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 48 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 48 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000))
@@ -153,6 +154,7 @@ wyvern->飛龍
 ドール：玩偶
 人形(にんぎょう)：人形
 ゴーストリックの人形(ひとがた)：鬼計的形代
+スピリッツ：精神
 
 用語：
 プレイ：操作
