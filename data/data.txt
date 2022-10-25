@@ -94,46 +94,6 @@ update texts set desc=replace(desc,'．','、');
 update texts set desc=replace(desc,'・','、');
 update texts set desc=replace(desc,'＋','+');
 
-distinct:
-SELECT name FROM datas, texts WHERE datas.id==texts.id AND (NOT datas.type==0x4011 OR datas.alias==0) AND (datas.type==0x4011 OR abs(datas.id-datas.alias)>=10);
-.exit
-
-replace:
-update texts set name=replace(name,'x1','x2');
-update texts set desc=replace(desc,'x1','x2');
-update texts set str1=replace(str1,'x1','x2');
-update texts set str2=replace(str2,'x1','x2');
-update texts set str3=replace(str3,'x1','x2');
-update texts set str4=replace(str4,'x1','x2');
-update texts set str5=replace(str5,'x1','x2');
-update texts set str6=replace(str6,'x1','x2');
-update texts set str7=replace(str7,'x1','x2');
-update texts set str8=replace(str8,'x1','x2');
-update texts set str9=replace(str9,'x1','x2');
-update texts set str10=replace(str10,'x1','x2');
-update texts set str11=replace(str11,'x1','x2');
-update texts set str12=replace(str12,'x1','x2');
-update texts set str13=replace(str13,'x1','x2');
-update texts set str14=replace(str14,'x1','x2');
-update texts set str15=replace(str15,'x1','x2');
-update texts set str16=replace(str16,'x1','x2');
-
-replace setcode:
-update datas set setcode=  where setcode=  ;
-
-setcode:
-AND ((setcode & 0xfff) == ($setcode & 0x0fff) AND (setcode & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 16 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 16 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 32 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 32 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000) OR (setcode >> 48 & 0xfff) == ($setcode & 0x0fff) AND (setcode >> 48 & 0xf000 & ($setcode & 0xf000)) == ($setcode & 0xf000))
-
-# of cards:
-SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000
-
-# of scripts:
-SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000 AND (NOT type & 0x10 OR type & 0x1000000)
-
-No.
-SELECT name FROM datas, texts WHERE datas.id==texts.id AND abs(datas.id-datas.alias)>=10 AND NOT type & 0x4000 
-AND name like 'No.%';
-
 
 卡名：
 dash->衝刺
@@ -164,6 +124,12 @@ de Fleur->鮮花
 wyvern->飛龍
 スピリッツ：精神
 
+wizard: 男巫/巫師
+witch: 女巫/魔女
+sorcerer: 術士
+sorceress: 女術士
+
+
 用語：
 通常のドロー：通常抽牌
 同一チェーン：相同連鎖串
@@ -188,6 +154,12 @@ toss：投擲
 對手不能以oo當作對象：只影響對手的怪獸
 oo不會成為對象：也影響我方的怪獸
 
+
+發動後此卡不送去墓地，直接覆蓋
+雙方玩家各自從牌組抽1張卡
+對手選1張自身的手牌捨棄
+對手選1張手牌捨棄
+對手的手牌隨機選1張捨棄
 このカードは通常召喚...：此卡不能通常召喚(用來搜尋特殊召喚怪獸)
 給此卡放置...魔力計數器
 
@@ -196,7 +168,7 @@ Release:
 必要なリリース：需要的解放
 
 次數：各能使用1次、只有1次能使用其中1個
-唯一：在場上只能表側表示存在1隻
+唯一：在場上只能有1隻表側表示存在
 
 さらに/：那之後
 発動するターン/召喚するターン/：...的整回合中
