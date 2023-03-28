@@ -1,21 +1,28 @@
 ﻿texts
 中點：
-U+00b7(中點)·
+U+00B7(中點)·
 U+2027(音界號)‧
-U+30fb(片假名中點)・
-U+fe52(小句號)﹒
-U+ff0e(全形句號)．
-U+ff65(半形片假名中點)･
-效果敘述：使用、(3001)
-卡名的音界號：使用‧(2027)
-系列名的中點：使用.(002e)
+U+30FB(片假名中點)・
+U+FE52(小句號)﹒
+U+FF0E(全形句號)．
+U+FF65(半形片假名中點)･
+
+效果敘述： 、 (3001)
+卡名的音界號： ‧ (2027)
+系列名的中點： . (002e)
 
 連字號：
-U+FF0D(全形hyphen-minus)－
-U+2500(Box Drawings Light Horizontal)─
+U+002D - hyphen-minus
+U+FF0D － fullwidth hyphen-minus
+U+2013 – en dash
+U+2014 — em dash(破折號)
+
+
+表格繪製：
+U+2500 ─ Box Drawings Light Horizontal
 
 乘號：
-U+00D7(×)
+U+00D7 ×
 
 引號：
 ""
