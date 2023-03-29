@@ -1,4 +1,4 @@
 *.conf text
 *.lua text
-*.ydk text
+*.ydk eol=lf
 *.cdb binary
