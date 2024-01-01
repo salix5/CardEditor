@@ -1,9 +1,0 @@
-exclude:
-    - data/*.txt
-    - deck/
-    - expansions/
-    - replay/
-    - script/
-    - single/
-    - sound/
-    - textures/
