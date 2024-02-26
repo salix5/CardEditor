@@ -662,4 +662,5 @@
 0x1aa	天盃龍
 0x1ab	蕾禍
 0x1ac	沙羅曼龍	Salamandra
+0x1ad	劫灰	Ashened
 #end
