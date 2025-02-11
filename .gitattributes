@@ -1,4 +1,0 @@
-*.conf text
-*.lua text
-*.ydk eol=lf
-*.cdb binary
