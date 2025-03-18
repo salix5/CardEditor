@@ -1,6 +1,4 @@
 exclude:
-    - data/*.txt
+    - data/
     - expansions/
-    - fonts/
-    - sound/
     - textures/
