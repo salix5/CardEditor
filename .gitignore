@@ -1,0 +1,7 @@
+/pics
+/textures
+/Windbot
+*.dll
+*.exe
+*.tar.gz
+cards.cdb
