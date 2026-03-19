@@ -1,6 +1,6 @@
 #!/bin/bash
 curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 --create-dirs --output-dir "expansions" -O https://cdn.jsdelivr.net/gh/salix5/ypk@master/pre-release.ypk
-curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -O https://github.com/salix5/cdb/releases/latest/download/card.cdb
+curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -O https://github.com/salix5/cdb/releases/latest/download/cards.cdb
 curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -O https://cdn.jsdelivr.net/gh/salix5/CardEditor@master/strings.conf
 curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -O https://cdn.jsdelivr.net/gh/salix5/CardEditor@master/lflist.conf
 curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -O https://cdn.jsdelivr.net/gh/salix5/CardEditor@master/rebuild.sh
