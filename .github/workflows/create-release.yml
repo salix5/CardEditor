@@ -18,5 +18,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG_NAME: ${{ github.ref_name }}
         run: |
-          gh release create "$TAG_NAME" --title "Release $TAG_NAME"
+          gh release create "$TAG_NAME" --title "$TAG_NAME"
           gh release upload "$TAG_NAME" update.sh rebuild.sh strings.conf lflist.conf --clobber
