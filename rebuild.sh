@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="v1.6.2"
+VERSION="v1.7.0"
 curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -L -O "https://github.com/salix5/ygopro/releases/download/${VERSION}/YGOPro.exe"
 curl --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -L -O https://github.com/salix5/windbot/releases/latest/download/WindBot.tar.gz
 tar -xzf WindBot.tar.gz
