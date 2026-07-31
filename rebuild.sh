@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="v1.7.2"
+VERSION="v1.8.0"
 curl -q --fail --ssl-revoke-best-effort --retry 2 --connect-timeout 10 -L -O "https://github.com/salix5/ygopro/releases/download/${VERSION}/YGOPro-${VERSION}-x64.tar.gz"
 tar -xzf "YGOPro-${VERSION}-x64.tar.gz"
 rm "YGOPro-${VERSION}-x64.tar.gz"
