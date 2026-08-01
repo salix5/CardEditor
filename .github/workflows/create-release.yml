@@ -21,4 +21,5 @@ jobs:
           mkdir -p release
           cp rebuild.sh strings.conf lflist.conf genesys.conf release
           tar -czvf packages.tar.gz -C release .
-          gh release create "$TAG_NAME" --title "$TAG_NAME" update.sh packages.tar.gz
+          tar -czvf single.tar.gz single
+          gh release create "$TAG_NAME" --title "$TAG_NAME" update.sh packages.tar.gz single.tar.gz
